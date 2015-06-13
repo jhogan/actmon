@@ -1,0 +1,113 @@
+The VB Application identified by the event source logged this Application OrderManagement: Thread ID: 1892 ,Logged: An Error Occurred.
+CALL STACK:   EMAX\I18N\Email\intSendMail
+NUMBER:  -2147220977
+SOURCE:  I18N
+DESCRIPTION:  The server rejected one or more recipient addresses. The server response was: 452 4.2.2 Mailbox full
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ACALog>
+	<LogCategory>Sourcing</LogCategory>
+	<Header>Sourcing Error</Header>
+	<EventID>3001</EventID>
+	<Body>Order ID:	ad25e37d-80e2-4ac2-be51-48fefa58484b
+dayOfWeek must be between 1 and 7
+   at DAC.Activator.Sourcing.Components.Warehouse.WarehouseSchedule.get_Item(Int16 dayOfWeek)
+   at DAC.Activator.Sourcing.Components.Warehouse.Warehouse.get_IsOpen()
+   at DAC.Activator.Sourcing.Components.Warehouse.Warehouse.IsOpenWithin(TimeSpan ts)
+   at DAC.Activator.Sourcing.Storage.LineItemStorage.RemoveClosedWarehouses()
+   at DAC.Activator.Sourcing.Storage.MasterStorage.ExecuteFillKill(Boolean deleteClosed, Boolean deleteWithoutInventory)
+   at DAC.Activator.Sourcing.SourcingStrategies.LineByLineSourcingStrategy.SourceOrder(Guid orderID, Boolean generateCQSD, Boolean updateFreightForBackorders, Boolean returnMissingQuantityDetails, Int32 clientID, Int32 userID)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>3/28/2004 9:30:52 AM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>Sourcing</LogCategory>
+	<Header>Sourcing Error</Header>
+	<EventID>3001</EventID>
+	<Body>Order ID:	cb6a2c6e-50c2-4e7c-ab37-a7a5109933f9
+dayOfWeek must be between 1 and 7
+   at DAC.Activator.Sourcing.Components.Warehouse.WarehouseSchedule.get_Item(Int16 dayOfWeek)
+   at DAC.Activator.Sourcing.Components.Warehouse.Warehouse.get_IsOpen()
+   at DAC.Activator.Sourcing.Components.Warehouse.Warehouse.IsOpenWithin(TimeSpan ts)
+   at DAC.Activator.Sourcing.Storage.LineItemStorage.RemoveClosedWarehouses()
+   at DAC.Activator.Sourcing.Storage.MasterStorage.ExecuteFillKill(Boolean deleteClosed, Boolean deleteWithoutInventory)
+   at DAC.Activator.Sourcing.SourcingStrategies.LineByLineSourcingStrategy.SourceOrder(Guid orderID, Boolean generateCQSD, Boolean updateFreightForBackorders, Boolean returnMissingQuantityDetails, Int32 clientID, Int32 userID)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>3/28/2004 9:30:46 AM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>DAC.Activator.Sourcing</LogCategory>
+	<Header>Get Order Failure</Header>
+	<EventID>3001</EventID>
+	<Body>Couldn't retrieve order e82f15fe-a1b6-416d-afed-dc9d40e15a2c</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>4/14/2004 1:34:08 PM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>Sourcing</LogCategory>
+	<Header>Sourcing Error</Header>
+	<EventID>3001</EventID>
+	<Body>capErrorinSourcing
+   at DAC.Activator.Sourcing.Components.Order.OrderController.GetOrder(Guid orderID)
+   at DAC.Activator.Sourcing.SourcingStrategies.LineByLineSourcingStrategy.SourceOrder(Guid orderID, Boolean generateCQSD, Boolean updateFreightForBackorders, Boolean returnMissingQuantityDetails, Int32 clientID, Int32 userID)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>4/14/2004 1:33:05 PM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>DAC.Activator.Sourcing</LogCategory>
+	<Header>Get Order Failure</Header>
+	<EventID>3001</EventID>
+	<Body>Couldn't retrieve order e82f15fe-a1b6-416d-afed-dc9d40e15a2c</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>4/14/2004 1:33:05 PM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>Sourcing</LogCategory>
+	<Header>Sourcing Error</Header>
+	<EventID>3001</EventID>
+	<Body>Order ID:	bfb5fe0a-b9d8-4198-807b-a9868f9fc26e
+capErrorNotAllProductsCanShipComplete
+   at DAC.Activator.Sourcing.SourcingStrategies.LineByLineSourcingStrategy.SourceOrder(Guid orderID, Boolean generateCQSD, Boolean updateFreightForBackorders, Boolean returnMissingQuantityDetails, Int32 clientID, Int32 userID)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>4/14/2004 1:30:01 PM</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>ActivatorOrderManagementException</LogCategory>
+	<Header></Header>
+	<EventID>0</EventID>
+	<Body>??????????????? ?????????????????
+Trace:   at DAC.Activator.QuoteOrderSearch.setupPageControls()
+   at DAC.Activator.QuoteOrderSearch.Page_Load(Object sender, EventArgs e)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>2004/04/14 13:29:18</DateTime>
+</ACALog>
+<ACALog>
+	<LogCategory>ActivatorOrderManagementException</LogCategory>
+	<Header></Header>
+	<EventID>0</EventID>
+	<Body>??????????????? ?????????????????
+Trace:   at DAC.Activator.OrderManagement.ProductSearchResults.Page_Load(Object sender, EventArgs e)</Body>
+	<Severity>1</Severity>
+	<MachineName>IBM_MAWEBP1</MachineName>
+	<DateTime>2004/04/14 13:27:36</DateTime>
+</ACALog>z
+
+The category [DAC.Activator.Sourcing] in the message is not found in the configuration file. The default category [ActivatorException] is used instead to process the message.
+
+
+Summary for ACA.NET Distributor:
+======================================
+--> 
+
+--> MachineName:IBM_MAWEBP1
+--> TimeStamp:4/19/2004 9:44:35 AM
+--> FullName:Avanade.ACA.Logging.Distributor, Version=2.2.75.0, Culture=neutral, PublicKeyToken=aee6125e27bf0861
+--> AppDomainName:DefaultDomain
+--> WindowsIdentity:DAC\CFS_Services 

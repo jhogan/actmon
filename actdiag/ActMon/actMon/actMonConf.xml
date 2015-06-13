@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<DataSet1 xmlns="http://www.tempuri.org/actMonConf.xsd">
+		<monitor id="1" type="dirMon">
+			<pollInterval>30</pollInterval>
+			<server>ibm_mawebp1</server>
+			<location>![CDATE[w$\work\sourceEdi\processing]]</location>
+		</monitor>
+		<monitor id="2" type="dirMon">
+			<pollInterval>30</pollInterval>
+			<server>ibm_mawebp1</server>
+			<location>![CDATE[w$\work\sourceEdi\processing]]</location>
+		</monitor>
+		<monitor id="3" type="processInstance">
+			<pollInterval>30</pollInterval>
+			<server>ibm_mawebp1</server>
+			<name>xdd.exe</name>
+		</monitor>
+
+		<threshHold id="1" monitorID="1">
+			<max>50</max>
+		</threshHold>
+
+</DataSet1>

@@ -1,0 +1,26 @@
+<monitors>
+	<monitor id=1 type="dirMon">
+		<pollInterval="30"/>
+		<server="ibm_mawebp1"/>
+		<location="w$\work\sourceEdi\processing"/>
+	</monitor>
+	<monitor id=2 type="dirMon">
+		<pollInterval="30"/>
+		<server="ibm_mawebp1"/>
+		<location="w$\work\sourceEdi\processing">
+	</monitor>
+	<monitor id=3 type="processInstance">
+		<pollInterval="30"/>
+		<server="ibm_mawebp1"/>
+		<name="xddd.exe"/>
+	</monitor>
+</monitors>
+
+<threshHolds>
+	<threshHold id="1" monitorID=1>
+		<max="50"/>
+	</threshHold>
+</threshHolds>
+
+		
+	

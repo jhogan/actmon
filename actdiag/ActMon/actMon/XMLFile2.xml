@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Conf xmlns="http://tempuri.org/Conf.xsd">
+	<Monitors xmlns="http://tempuri.org/Conf.xsd">
+		<Monitor id="2">
+			<pollInterval>1</pollInterval>
+			<name>Name</name>
+			<location>f:\OS</location>
+			<server></server>
+			<type>DIR_FILE_COUNTER</type>
+			<Description>BizTalk Outbound File Counter</Description>
+			<distList>1</distList>
+			<Threshhold>
+				<Duaration>10</Duaration>
+				<severity>1</severity>
+				<startAt>2004-05-01T05:00:00.0000000-07:00</startAt>
+				<endAt>2004-05-01T05:00:00.0000000-07:00</endAt>
+				<ExceededPause>15</ExceededPause>
+				<Consecutive>false</Consecutive>
+				<Expression>value &gt; 5</Expression>
+				<Count>5</Count>
+				<ComparativeOperator>GT</ComparativeOperator>
+				<Enabled>true</Enabled>
+				<distList>1</distList>
+			</Threshhold>
+		</Monitor>
+	</Monitors>
+	<DistLists>
+		<DistList DistListID="1">
+			<EmailAddresses>nosbtr1@yahoo.com</EmailAddresses>
+			<Desc>DESC</Desc>
+		</DistList>
+	</DistLists>
+	<KVPs>
+		<KVP Key="MaxAlerts" Value="20" Desc="Maximum number of alerts that a threshold object can contain before flushing."></KVP>
+		<KVP Key="AlertLogFile" Value="alerts.log" Desc="Log file for alerts"></KVP>
+		<KVP Key="SMTP" Value="pop.phnx.qwest.net" Desc="SMPT server used for sending alerts."></KVP>
+	</KVPs>
+	<Monitor id="3">
+		<pollInterval>1</pollInterval>
+		<name>Notepad Watch</name>
+		<location>notepad</location>
+		<server>tew</server>
+		<type>PROCESS_MON</type>
+		<Description>Watches Notepad</Description>
+		<distList>1</distList>
+		<Threshhold>
+			<Duaration>5</Duaration>
+			<severity>1</severity>
+			<startAt>2004-05-01T00:00:00.0000000-07:00</startAt>
+			<endAt>2004-05-01T00:00:00.0000000-07:00</endAt>
+			<ExceededPause>10</ExceededPause>
+			<Consecutive>false</Consecutive>
+			<Expression>value &gt; 1</Expression>
+			<Count>3</Count>
+			<ComparativeOperator>GT</ComparativeOperator>
+			<Enabled>true</Enabled>
+			<distList>1</distList>
+		</Threshhold>
+	</Monitor>
+</Conf>
